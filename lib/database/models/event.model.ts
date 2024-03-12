@@ -9,11 +9,11 @@ export interface IEvent extends Document {
   imageUrl: string;
   startDateTime: Date;
   endDateTime: Date;
-  price?: string;
+  price: string;
   isFree: boolean;
   url?: string;
-  category?: { _id: string; name: string }; // Assuming 'Category' is the name of the Category model
-  organizer?: { _id: string; firstName: string; lastName: string }; // Assuming 'User' is the name of the User model
+  category: { _id: string; name: string };
+  organizer: { _id: string; firstName: string; lastName: string };
 }
 
 const EventSchema = new Schema({
